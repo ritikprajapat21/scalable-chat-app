@@ -7,13 +7,31 @@
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  grid-template-rows: 1fr 80px;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
   padding: 80px;
   gap: 64px;
   font-synthesis: none;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.chatInput {
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.sendButton {
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,7 +87,10 @@
   border: none;
   font-family: var(--font-geist-sans);
   border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -98,7 +119,10 @@ button.secondary {
   border: none;
   font-family: var(--font-geist-sans);
   border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
